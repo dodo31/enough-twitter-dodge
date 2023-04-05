@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Enough Twitter Dodge",
+    "description": "Removes the dodge icon from Twitter UI.",
+    "version": "0.0.1",
+    "permissions": [],
+    "action": {
+        "default_icon": {
+            "128": "media/images/favicon.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*"],
+            "js": ["js/main.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "128": "media/images/favicon.png"
+    }
+}
